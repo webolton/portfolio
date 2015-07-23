@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <%= @title %>
+    <meta name="author" content="William E. Bolton">
+    <meta name="description" content="web developer portfolio site">
+    <meta name="keywords" content="developer, developemnt, front-end, back-end">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="###">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="mainImage"></div>
+      <div class="globalHeader">
+        <div class="globalHeaderWrapper">
+        <header class="mainHeader">
+          <a href="/" rel="me">
+            <h1>
+            William Bolton
+            </h1>
+            <p class="role">
+              Web-Developer based in Philadelphia, PA
+            </p>
+          </a>
+        </header>
+        <nav>
+          <ul>
+            <li class="headerLink1">
+              <a href="/projects" >Projects</a>
+            </li>
+            <li class="headerLink2">
+              <a href="/writing" >Writing</a>
+            </li>
+            <li class="headerLink3">
+              <a href="/contact" >Contact</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+      </div>
+      <div class="headerStripeIndex"></div>
+    <%= yield %>
+    <footer>
+      <p>All content on this site is copyright &copy; 2015 by William E. Bolton, PhD.</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
