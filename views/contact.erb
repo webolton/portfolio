@@ -1,16 +1,36 @@
-<form id="form" action="" method="GET">
-  <div>
-    <label>Name:</label>
-    <input id="name" name="name" type="text" placeholder="  NAME" />
+<div class="grid grid-pad">
+  <div class="col-1-1">
+    <div class="content">
+    <div class="contact-header">
+   
+        <h1>Get in Touch!</h1>
+        <p>Please drop me a line &mdash; I would love to chat!</p>
+    
+    </div>
+      <form action="contact" method="POST" class="contact-frm">
+        <h1>Contact Form 
+        </h1>
+        <label>
+          <input id="name" type="text" name="name" placeholder=" Name" />
+        </label>
+        <label>
+          <input id="email" type="email" name="email" placeholder="Email Address" />
+        </label>
+
+        <label>
+          <textarea id="message" name="message" placeholder="Write me a message"></textarea>
+        </label>
+          <label>
+          <select name="subject">
+            <option value="Work with Me">Let&rsquo;s work together!</option>
+            <option value="Let's talk about medieval studies">Let's Talk about Medieval Studies!</option>
+          </select>
+        </label>
+        <label>
+          <br/>
+          <input type="submit" class="button" value="Send" /> 
+        </label>
+      </form>
+    </div>
   </div>
-  <div>
-    <label id="email" name="email">Email:</label>
-    <input id="email" name="email" type="text" placeholder="  EMAIL" />
-  </div>
-  <div>
-    <textarea id="message" name="message" placeholder=" Write us a message..."></textarea>
-  </div>
-  <div>
-    <input name="send" type="submit" value="Submit" id="send" />
-  </div>
-</form>
+</div>
