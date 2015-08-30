@@ -1,6 +1,9 @@
 require 'rubygems'
+require 'bundler/setup'
 require 'sinatra'
+require 'sinatra/reloader'
 require 'mandrill'
+# require_relative 'lib/email'
 
 get '/' do
   @title = "<title>William Bolton — Web Developer Based in Philly</title>"
@@ -44,6 +47,11 @@ get '/contact' do
   erb :contact
 end
 
+# post '/contact' do
+#   m = MyEmailer.new
+#   m.send(params[:email])
+#   "Email Sent"
+# end
 
 post '/contact' do
   puts params.inspect
@@ -58,6 +66,7 @@ post '/contact' do
   }
 
   result = msg.messages.send body
+  puts result
   redirect to '/', "Thanks!!!"
 end
 
@@ -70,8 +79,3 @@ get '/thanks' do
 
   erb :thanks
 end
-
-
-
-
-
