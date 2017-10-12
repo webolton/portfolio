@@ -145,7 +145,7 @@ body {
 
 .top-bar {
   color: #FFFFFF;
-  height: 100px;
+  height: auto;
 }
 
 .top-bar h1 {
